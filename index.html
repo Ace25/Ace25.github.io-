@@ -2,22 +2,146 @@
 layout: default
 ---
 
-<div class="home">
+<!DOCTYPE html>
+<html lang="en-us">
 
-  <h1 class="page-heading">Posts</h1>
+<head>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+</head>
+<meta charset="utf-8">
+<title>Luigi's Pizzaria</title>
+<style>
+	h1{text-align:center;
+	font:italic 75px times;
+		font-weight:bold;
+		color:#20b022;
+		//Luigi's Pizza ^^
+	}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+	body{
+	background-color:#d4b768;
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	}
+ h2{
+	 text-align:left;
 
+ }
+	.t1{
+	font-size:15px;
+	font-family:"Georgia";
+	color:white;
+	line-height:40px;
+	background-color:green;
+	width:11%;
+	position:relative;
+	bottom:120px;
+
+}
+	.pic1{
+		//pic of inside of restaruant
+		float:center;
+		width:330px;
+		height:300px;
+		position:relative;
+		left:390px;
+		bottom:675px;
+		border:5px solid #f76314;
+	}
+
+th{
+	//table headbox "Menu"
+	background-color:#9ce635;
+	font-size:20px;
+	border:2px solid #95ff00;
+}
+		td{font-size:19px;
+			border:2px solid #95ff00;
+		}
+.FB{
+	position:absolute;
+	top:840px;
+	right:910px;
+	font-size: 22px;
+
+
+}
+	p.specials{
+	text-align:left;
+	font-size:23px;
+	color:purple;
+
+	}
+		.pic2{
+			position:relative;
+			bottom:140px;
+				border:5px solid #f76314;
+		}
+
+	.fineprint{
+		text-align:center;
+		position:absolute;;
+		left:420px;
+		color:purple;
+	}
+</style>
+<body >
+	<div>
+	<h1>Luigi's Pizza</h1>
+	<div>
+<img src="Company logo.jpg" class="pic2" >
+<table class="t1">
+	<th > Menu </th>
+	<tbody>
+
+<tr>
+		<td>
+			Selection#1
+		</td>
+</tr>
+<tr>
+		<td>
+			Selection#2
+		</td>
+</tr>
+<tr>
+		<td>
+			Selection#3
+		</td>
+</tr>
+<tr>
+		<td>
+			Selection#4
+		</td>
+</tr>
+<tr>
+		<td>
+			Selection#5
+		</td>
+</tr>
+<tr>
+		<td>
+			Selection#6
+		</td>
+</tr>
+</tbody>
+</table>
+
+<p class="specials">
+<br><br><br>
+Special of the day<br><br>
+  Riddle of the day
+</p>
+<p class= "FB"><a href="https://www.facebook.com/Luigis-Pizzeria-1214305581930610/?ref=hl">
+	Follow us on Facebook </a>
+</p>
 </div>
+<img class="pic1" src="Pizzaria1.jpg" >
+<p class="fineprint">1615 Avenue U, Brooklyn, NY 11229 </p>
+</div>
+<script>
+console.log("welll now");
+</script>
+</body>
+
+</html>
+
